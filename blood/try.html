@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blood Deive</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap4.min.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="js/dataTables.bootstrap4.min.js"></script>
+</head>
+<body><p>lorem100</p>
+console.log('Hi');
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-11">	
+							<h5 class="card-header">Enrollment</h5>
+							<div class="card" style="padding-left: 10px;padding-top: 20px">
+            
+            <form action ="actionenroll.php" method="POST">
+            <p style="color:blue;">Select date</p><div class="textbox" required>
+                <input type="date" name="edate" ></div><br>
+                <p>Name</p><div class="textbox">
+                <input type="text" name="ename" placeholder="Your name" required size="100"></div><br>
+                <p>Phone Number</p>
+                <div class="textbox">
+                <input type="text" name="epno" placeholder="Your Phone Number" required></div><br>
+                <p>Whatsapp Number</p>
+                <div class="textbox">
+                <input type="text" name="ewpno" placeholder="Your Whatsapp Number" required></div><br>
+                <p>Gender</p>
+                <div class="textbox">
+                    <input type="radio" name="egender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio"  name="egender" value="female">
+                    <label for="female">Female</label>
+               </div><br>
+                <p>mail</p>
+                <div class="textbox">
+                <input type="text" name="email" placeholder="Your Mail" required size="100"></div><br>
+               <p>Occupation</p>
+               <div class="textbox">
+                    <input type="radio"  name="eoccupation" value="working" required>
+                    <label for="working">Working</label>
+                    <input type="radio" name="eoccupation" value="Non-working">
+                    <label for="nonworking">Non Working</label>
+                    <input type="radio" name="eoccupation" value="Student">
+                    <label for="Student">Student</label>
+               </div><br>
+                <p>Experience</p><div class="textbox" size="100">
+                <input type="text" name="enyw" placeholder="Your Experience"></div><br>
+                <p>Eduucation Qulaification</p>
+                <div class="textbox">
+                <select name="eeqn"class="form-control" required>
+                 <option name="eeqn"value="10th">10TH</option>
+                 <option name="eeqn" value="12th">12TH</option>
+                 <option name="eeqn" value="Diploma">Diploma</option>
+                 <option name="eeqn" value="UG">UG</option>
+                 <option name="eeqn" value="PG">PG</option>
+                </select></div><br>
+                <p>Course</p>
+                <div class="textbox">
+                <select name="ecourse"class="form-control" required>
+                    <option name="ecourse" value="D.Fashion" >Diploma in Fashion tech</option>
+                    <option name="ecourse"value="D.Merchand" >Diploma in Merchandise</option>
+                    
+                    </select></div><br>
+                <p>Date Of Birth</p><div class="textbox">
+                <input type="date" name="edob" placeholder="Your DOB"></div><br>
+                <p>Address</p>
+                <div class="textbox">
+                <input type="text" name="eaddress" placeholder="Address" required size="100"></div><br>
+                 <p>Blood Group</p>
+                 <div class="textbox">
+                 <select name="ebloodgroup"class="form-control" required>
+                    <option name="ebloodgroup" value="">Select blood group</option>
+                    <option name="ebloodgroup" value="A+ve">A+ve</option>
+                    <option name="ebloodgroup" value="B+ve">B+ve</option>
+                    <option name="ebloodgroup" value="O+ve">O+ve</option>
+                    <option name="ebloodgroup" value="AB+ve">AB+ve</option>
+                    <option name="ebloodgroup" value="A-ve">A-ve</option>
+                    <option name="ebloodgroup" value="B-ve">B-ve</option>
+                    <option name="ebloodgroup" value="O-ve">O-ve</option>
+                    <option name="ebloodgroup" value="AB-ve">AB-ve</option>
+                </select> </div><br>
+                <p>Date of Joining</p><div class="textbox">
+                <input type="date" name="edj" placeholder="Joining Date"></div><br>
+                <p>Registration Number</p><div class="textbox" required>
+                <input type="text" name="ereg" placeholder="Registration Number"></div><br>
+                <p>Term One Fees</p><div class="textbox">
+                <input type="text" name="etermone" placeholder="Term one"></div><br>
+                <p>Term two Fees</p><div class="textbox">
+                <input type="text" name="etermtwo" placeholder="Term two"></div><br>
+                <p>Term Three fees</p><div class="textbox">
+                <input type="text" name="etermthree" placeholder="Term Three"></div><br>
+            </br></br>
+                <button type="submit" class="btn">Register</button>
+                <button onclick="goBack()">Go Back</button>
+
+
+            </form>
+        </div>
+						</div>
+						<!-- <div class="card">
+							<div class="row"><div class="col-md-11">	
+							<h5 class="card-header">Blood Drive</h5>
+						</div></div></div> -->
+		</div>
+	</div>
+</body>
+</html>
